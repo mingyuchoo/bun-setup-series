@@ -19,12 +19,18 @@ $ bun add <pakcage-name>
 $ bun add -d <package-name-for-develop>
 ```
 
-## For TypeScript
-
 ### Install the TypeScript definitions
 
 ```bash
 $ bun add -d bun-types # dev dependency
+```
+
+## How to create an ElysiaJS project
+
+```bash
+bun create elysia <project-name>
+cd <project-name>
+bun run src/index.ts
 ```
 
 ## References
