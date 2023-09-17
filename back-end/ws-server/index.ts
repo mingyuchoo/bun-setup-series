@@ -1,33 +1,42 @@
-type WebSocketData = {
-  createdAt: number;
-  username: string;
+import { v4 as uuidv4 } from 'uuid';
+
+type Data = {
+  username: string,
+  createdAt: number,
 }
 
-const PORT_NUMBER = 8000;
-
-const server = Bun.serve<WebSocketData>({
-  port: PORT_NUMBER,
+const server = Bun.serve<Data>({
   fetch(req, server) {
-    const url = new URL(req.url);
-    const success = server.upgrade(req, { data: {
-      createdAt: Date.now(),
-      username: url.pathname.replace(/^\//, '').replace(/\/.*/, ''),
-    }});
-    return new Response("WebSocket upgrade failed :(", { status: 500 });
+    const cookies = req.headers.get("cookie");
+    const success = server.upgrade(req, { 
+      data: {
+        username: uuidv4(),
+        createdAt: Date.now(),
+      }
+    });
+    if (success) return undefined;
+
+    return new Response("Hello world");
   },
   websocket: {
     open(ws) {
-      const msg = `${ws.data.username} has entered the chat.`;
-      ws.subscribe("the-gorup-chat");
+      const msg = `${ws.data.username} has entered the chat`;
+      console.log(msg);
+      ws.subscribe("the-group-chat");
       ws.publish("the-group-chat", msg);
+      // ws.send(msg);
     },
     message(ws, message) {
+      console.log(message);
       ws.publish("the-group-chat", `${ws.data.username}: ${message}`);
+      // ws.send(message);
     },
-    close(ws, code, message) {
-      const msg = `${ws.data.username} has left the cat`;
-      ws.unsubscribe("the-group-chat");
+    close(ws) {
+      const msg = `${ws.data.username} has left the chat`;
+      console.log(msg);
       ws.publish("the-group-chat", msg);
+      ws.unsubscribe("the-group-chat");
+      // ws.send(msg);
     },
   },
 });
