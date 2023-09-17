@@ -5,7 +5,7 @@
 ### Create a React app
 
 ```bash
-$ bun create vite <project-name> -- template react-swc-ts
+$ bun create vite <project-name> --template react-swc-ts
 $ cd <project-name>
 $ bun install
 $ bun run dev
