@@ -1,0 +1,19 @@
+{
+  "name": "bun-monorepo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "bun run clean:modules && bun run clean:lockb",
+    "clean:modules": "rm -rf node_modules packages/server/node_modules packages/client/node_modules",
+    "clean:lockb": "rm -rf bun.lockb packages/server/bun.lockb packages/client/bun.lockb",
+    "start": "bun run start:server && bun run start:client",
+    "start:server": "bun run --cwd packages/server start",
+    "start:client": "bun run --cwd packages/client dev"
+  } 
+}
