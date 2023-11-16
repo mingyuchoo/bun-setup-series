@@ -14,22 +14,22 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-relay": "^15.0.0",
-    "relay-runtime": "^15.0.0"
+    "react-relay": "^16.0.0",
+    "relay-runtime": "^16.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.24",
-    "@types/react-dom": "^18.2.8",
-    "@types/react-relay": "^14.1.6",
-    "@types/relay-runtime": "^14.1.14",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "@vitejs/plugin-react-swc": "^3.4.0",
-    "eslint": "^8.50.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-relay": "^16.0.2",
+    "@types/relay-runtime": "^14.1.17",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "@vitejs/plugin-react-swc": "^3.4.1",
+    "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "relay-compiler": "^15.0.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "relay-compiler": "^16.0.0",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9"
+    "vite": "^4.5.0"
   }
 }
