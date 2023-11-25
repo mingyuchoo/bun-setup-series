@@ -1,11 +1,10 @@
-# bun-setup-series
-
+# README
 ## Setup environment
 
 ### Install Bun for macOS or Linux
 
 ```bash
-$ curl -fsSL https://bun.sh/install | bash 
+$ curl -fsSL https://bun.sh/install | bash
 ```
 
 ### Upgrade Bun
@@ -17,7 +16,7 @@ $ bun upgrade
 ### Uninstall Bun for macOs or Linux
 
 ```bash
-$ rm -rf ~/.bun 
+$ rm -rf ~/.bun
 ```
 
 ## Create Porject

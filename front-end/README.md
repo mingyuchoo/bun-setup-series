@@ -1,5 +1,4 @@
-# Bun for Front-end application
-
+# README
 ## How to create a project
 
 ### Create a React app

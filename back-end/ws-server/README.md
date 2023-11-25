@@ -1,5 +1,4 @@
-# ws-server
-
+# README
 To install dependencies:
 
 ```bash

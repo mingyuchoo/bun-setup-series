@@ -1,5 +1,4 @@
-# client
-
+# README
 ## How to create <project-name>
 
 ```bash

@@ -1,5 +1,4 @@
-# server
-
+# README
 ## How to create <project-name>
 
 ```bash
@@ -19,9 +18,7 @@ bun add -d @types/figlet
 
 ```bash
 bun run start
-
 # or
-
 bun run index.ts
 ```
 

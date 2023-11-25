@@ -1,5 +1,4 @@
-# Bun for Back-end application
-
+# README
 ## How to create a project
 
 ### Create a HTTP server

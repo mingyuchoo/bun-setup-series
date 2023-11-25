@@ -1,5 +1,4 @@
-# relay-study-01
-
+# README
 ## How to create a project
 
 ```sh

@@ -1,5 +1,4 @@
-# bun-monorepo
-
+# README
 ## How to create <monorepo-project-name>
 
 ```bash
@@ -30,7 +29,7 @@ bun run clean
 bun install
 ```
 
-## How to run 
+## How to run
 
 ```bash
 bun run start:server
