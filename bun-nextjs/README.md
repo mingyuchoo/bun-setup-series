@@ -4,7 +4,8 @@
 
 ```bash
 bun create next-app
-
+# or
+bunx create-next-app
 ```
 
 ## How to build
